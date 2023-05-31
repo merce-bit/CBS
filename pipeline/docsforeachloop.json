@@ -46,7 +46,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata1').output.ChildItems",
+						"value": "@activity('Extraction of multiple files').output.ChildItems",
 						"type": "Expression"
 					},
 					"activities": [
