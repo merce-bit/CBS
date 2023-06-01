@@ -2,7 +2,7 @@
 	"name": "Json",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage",
+			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"folderPath": "output",
-				"fileSystem": "cbscontainer"
+				"fileSystem": "outputcbscontainer"
 			}
 		},
 		"schema": {}
