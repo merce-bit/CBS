@@ -1,5 +1,5 @@
-{ 
-  "name" : "Admin", 
-  "age" : 36, 
-  "rights" : [ "admin", "editor", "contributor" ] 
+{
+  "name": "John Doe",
+  "age": 30,
+  "city": "New York"
 }
