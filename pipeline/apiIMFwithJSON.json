@@ -5,7 +5,14 @@
 			{
 				"name": "ForEach through the APIEndpoints",
 				"type": "ForEach",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Copy data from json file",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"userProperties": [
 					{
 						"name": "CurrentEndpoint",
@@ -112,6 +119,26 @@
 			"OutputFolderPath": {
 				"type": "string",
 				"defaultValue": "'https://github.com/merce-bit/CBS/blob/main/ELT/endpoints.json'"
+			}
+		},
+		"variables": {
+			"baseUrl": {
+				"type": "String"
+			},
+			"groups": {
+				"type": "String"
+			},
+			"regions": {
+				"type": "String"
+			},
+			"countries": {
+				"type": "String"
+			},
+			"indicators": {
+				"type": "String"
+			},
+			"Var01": {
+				"type": "Array"
 			}
 		},
 		"annotations": [],

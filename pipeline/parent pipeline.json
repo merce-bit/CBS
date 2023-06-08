@@ -1,0 +1,26 @@
+{
+	"name": "parent pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute ParentPipeline",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "generatetokenfromGithub",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"variables": {
+			"Var01": {
+				"type": "Array"
+			}
+		},
+		"annotations": []
+	}
+}
