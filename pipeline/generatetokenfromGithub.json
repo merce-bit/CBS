@@ -44,17 +44,22 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "groups",
-					"value": "@activity('generatetokenfromGithub').output.value.groups"
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "Var",
+							"value": {
+								"type": "String"
+							}
+						}
+					],
+					"setSystemVariable": true
 				}
 			}
 		],
 		"variables": {
-			"baseUrl": {
-				"type": "String"
-			},
-			"groups": {
-				"type": "String"
+			"Var01": {
+				"type": "Array"
 			}
 		},
 		"annotations": []
