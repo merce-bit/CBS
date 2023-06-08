@@ -1,9 +1,9 @@
 {
 
-  "APIEndpoints": [
+  "Data": {
     "groups",
     "regions",
     "countries",
     "indicators"
-  ]
+  }
 }
