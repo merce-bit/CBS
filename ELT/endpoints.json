@@ -1,9 +1,28 @@
 {
-
-  "Data": {
-    "groups",
-    "regions",
-    "countries",
-    "indicators"
-  }
+  "data": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "age": 30,
+      "city": "New York"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "age": 28,
+      "city": "San Francisco"
+    },
+    {
+      "id": 3,
+      "name": "Alex Johnson",
+      "email": "alexjohnson@example.com",
+      "age": 35,
+      "city": "Chicago"
+    }
+  ]
 }
+
+
+has context menu
