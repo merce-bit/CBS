@@ -1,9 +1,17 @@
 {
 
   "Data": [
-    "groups",
-    "regions",
-    "countries",
-    "indicators"
+    {
+    "name": "groups"
+    },
+    {
+    "name":"regions"
+    },
+    {
+    "name":"countries"
+    },
+    {
+    "name":"indicators"
+    }
   ]
 }
