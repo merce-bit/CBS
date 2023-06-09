@@ -1,0 +1,53 @@
+{
+	"name": "RestResource2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "restapijson",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"endpont_i": {
+					"value": "@dataset().endpont_i",
+					"type": "Expression"
+				},
+				"endpont_c": {
+					"value": "@dataset().endpont_c",
+					"type": "Expression"
+				},
+				"endpoint_r": {
+					"value": "@dataset().endpont_r",
+					"type": "Expression"
+				},
+				"endpoint_g": {
+					"value": "@dataset().endpont_g",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"relativeURL": {
+				"type": "string"
+			},
+			"endpont_i": {
+				"type": "string"
+			},
+			"endpont_c": {
+				"type": "string"
+			},
+			"endpont_r": {
+				"type": "string"
+			},
+			"endpont_g": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().relativeURL",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}
