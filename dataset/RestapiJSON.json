@@ -1,5 +1,5 @@
 {
-	"name": "RestResource2",
+	"name": "RestapiJSON",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "restapijson",
@@ -24,9 +24,6 @@
 			}
 		},
 		"parameters": {
-			"relativeURL": {
-				"type": "string"
-			},
 			"endpont_i": {
 				"type": "string"
 			},
