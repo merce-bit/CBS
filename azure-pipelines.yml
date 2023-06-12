@@ -37,7 +37,7 @@ steps:
             az postgres flexible-server execute --name $(postgrescbs.postgres.database.azure.com) \
             --admin-user $(admincbsconsulytic) --admin-password '$(Con1Su2Ly3Tic4)' \
             --database-name $(resourcescbs) --file-path /ELT/Metadata/Sources/Source_IMF.sql
-    arguments: '-SERVERNAME postgrescbs `       
+    arguments:  -SERVERNAME postgrescbs `       
                 -DBNAME resourcescbs `       
                 -DBUSER admincbsconsulytic`       
                 -DBPASSWORD Con1Su2Ly3Tic4'
