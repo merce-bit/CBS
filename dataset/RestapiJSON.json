@@ -39,12 +39,6 @@
 		},
 		"annotations": [],
 		"type": "RestResource",
-		"typeProperties": {
-			"relativeUrl": {
-				"value": "@dataset().relativeURL",
-				"type": "Expression"
-			}
-		},
 		"schema": []
 	}
 }
