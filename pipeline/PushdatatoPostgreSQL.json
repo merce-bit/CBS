@@ -51,7 +51,7 @@
 					},
 					"ifFalseActivities": [
 						{
-							"name": "Wait1",
+							"name": "Wait if file is not find",
 							"type": "Wait",
 							"dependsOn": [],
 							"userProperties": [],
@@ -62,7 +62,7 @@
 					],
 					"ifTrueActivities": [
 						{
-							"name": "Copy data1",
+							"name": "Copy data from blob storage to PostgreSQL",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -76,6 +76,19 @@
 							"typeProperties": {
 								"source": {
 									"type": "DelimitedTextSource",
+									"additionalColumns": [
+										{
+											"name": "source_data",
+											"value": "$$FILEPATH"
+										},
+										{
+											"name": "timestamp",
+											"value": {
+												"value": "@utcnow()",
+												"type": "Expression"
+											}
+										}
+									],
 									"storeSettings": {
 										"type": "AzureBlobFSReadSettings",
 										"recursive": true,
@@ -89,7 +102,6 @@
 									"type": "AzurePostgreSQLSink",
 									"writeBatchSize": 1000000,
 									"writeBatchTimeout": "00:30:00",
-									"preCopyScript": "truncate table personal_info",
 									"writeMethod": "CopyCommand"
 								},
 								"enableStaging": false,
@@ -135,9 +147,31 @@
 												"ordinal": 4
 											},
 											"sink": {
-												"name": "allarounderornot",
+												"name": "management",
 												"type": "String",
 												"physicalType": "character"
+											}
+										},
+										{
+											"source": {
+												"name": "source_data",
+												"type": "String"
+											},
+											"sink": {
+												"name": "source_data",
+												"type": "String",
+												"physicalType": "character"
+											}
+										},
+										{
+											"source": {
+												"name": "timestamp",
+												"type": "String"
+											},
+											"sink": {
+												"name": "timestamp",
+												"type": "DateTime",
+												"physicalType": "timestamp without time zone"
 											}
 										}
 									],
