@@ -11,20 +11,38 @@
 		"AzureDataLakeStorage_accountKey": {
 			"value": ""
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
 		"AzureOutputStorage_connectionString": {
 			"value": ""
 		},
-		"AzureDataLakeStorage1_accountKey": {
+		"AzurePostgreSql_connectionString": {
+			"value": "Host=postgresqlcbs.postgres.database.azure.com;Port=5432;Database=cbs;UID=admincbsconsulytic;EncryptionMethod=1;ValidateServerCertificate=0"
+		},
+		"GitHubJSONfile_credential": {
 			"value": ""
 		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://cbsst0rage.dfs.core.windows.net/"
 		},
-		"RestService_properties_typeProperties_url": {
-			"value": "https://www.imf.org/external/datamapper/api/v1/indicators"
-		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://outputcbsst0rage.dfs.core.windows.net/"
+		},
+		"AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://keyvaultforaccesstoken.vault.azure.net/"
+		},
+		"GitHubJSONfile_properties_typeProperties_username": {
+			"value": "merce-bit"
+		},
+		"RestService_properties_typeProperties_url": {
+			"value": "https://www.imf.org/external/datamapper/api/v1/"
+		},
+		"restapijson_properties_typeProperties_url": {
+			"value": "https://www.imf.org/external/datamapper/api/v1/"
+		},
+		"restapijson_properties_typeProperties_userName": {
+			"value": "merce-bit"
 		}
 	}
 }

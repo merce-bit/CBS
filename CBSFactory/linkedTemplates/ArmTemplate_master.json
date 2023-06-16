@@ -15,25 +15,50 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage'"
 		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
 		"AzureOutputStorage_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureOutputStorage'"
 		},
-		"AzureDataLakeStorage1_accountKey": {
+		"AzurePostgreSql_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+			"metadata": "Secure string for 'connectionString' of 'AzurePostgreSql'",
+			"defaultValue": "Host=postgresqlcbs.postgres.database.azure.com;Port=5432;Database=cbs;UID=admincbsconsulytic;EncryptionMethod=1;ValidateServerCertificate=0"
+		},
+		"GitHubJSONfile_credential": {
+			"type": "secureString",
+			"metadata": "Secure string for 'credential' of 'GitHubJSONfile'"
 		},
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://cbsst0rage.dfs.core.windows.net/"
 		},
-		"RestService_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://www.imf.org/external/datamapper/api/v1/indicators"
-		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://outputcbsst0rage.dfs.core.windows.net/"
+		},
+		"AzureKeyVault_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://keyvaultforaccesstoken.vault.azure.net/"
+		},
+		"GitHubJSONfile_properties_typeProperties_username": {
+			"type": "string",
+			"defaultValue": "merce-bit"
+		},
+		"RestService_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://www.imf.org/external/datamapper/api/v1/"
+		},
+		"restapijson_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://www.imf.org/external/datamapper/api/v1/"
+		},
+		"restapijson_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "merce-bit"
 		},
 		"containerUri": {
 			"type": "string",
@@ -68,24 +93,82 @@
 					"AzureDataLakeStorage_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage_accountKey')]"
 					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
 					"AzureOutputStorage_connectionString": {
 						"value": "[parameters('AzureOutputStorage_connectionString')]"
 					},
-					"AzureDataLakeStorage1_accountKey": {
-						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					"GitHubJSONfile_credential": {
+						"value": "[parameters('GitHubJSONfile_credential')]"
 					},
 					"AzureDataLakeStorage_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage_properties_typeProperties_url')]"
 					},
-					"RestService_properties_typeProperties_url": {
-						"value": "[parameters('RestService_properties_typeProperties_url')]"
-					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"AzureKeyVault_properties_typeProperties_baseUrl": {
+						"value": "[parameters('AzureKeyVault_properties_typeProperties_baseUrl')]"
+					},
+					"GitHubJSONfile_properties_typeProperties_username": {
+						"value": "[parameters('GitHubJSONfile_properties_typeProperties_username')]"
+					},
+					"RestService_properties_typeProperties_url": {
+						"value": "[parameters('RestService_properties_typeProperties_url')]"
 					}
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "CBSFactory_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzurePostgreSql_connectionString": {
+						"value": "[parameters('AzurePostgreSql_connectionString')]"
+					},
+					"restapijson_properties_typeProperties_url": {
+						"value": "[parameters('restapijson_properties_typeProperties_url')]"
+					},
+					"restapijson_properties_typeProperties_userName": {
+						"value": "[parameters('restapijson_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'CBSFactory_ArmTemplate_0')]"
+			]
+		},
+		{
+			"name": "CBSFactory_ArmTemplate_2",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'CBSFactory_ArmTemplate_1')]"
+			]
 		}
 	]
 }
