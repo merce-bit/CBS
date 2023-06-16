@@ -24,6 +24,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -129,6 +130,7 @@
 										},
 										{
 											"source": {
+												"type": "String",
 												"ordinal": 4
 											},
 											"sink": {
