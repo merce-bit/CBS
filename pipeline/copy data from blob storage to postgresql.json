@@ -1,5 +1,5 @@
 {
-	"name": "test copy data to postgresql",
+	"name": "copy data from blob storage to postgresql",
 	"properties": {
 		"activities": [
 			{
