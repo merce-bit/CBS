@@ -76,7 +76,7 @@
 									"ordinal": 4
 								},
 								"sink": {
-									"name": "allarounderornot",
+									"name": "management",
 									"type": "String",
 									"physicalType": "character"
 								}
