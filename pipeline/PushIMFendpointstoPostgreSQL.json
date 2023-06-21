@@ -106,6 +106,54 @@
 								"enableStaging": false,
 								"translator": {
 									"type": "TabularTranslator",
+									"mappings": [
+										{
+											"source": {
+												"name": "id",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "id",
+												"type": "Decimal",
+												"physicalType": "numeric"
+											}
+										},
+										{
+											"source": {
+												"name": "name",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "name",
+												"type": "String",
+												"physicalType": "character"
+											}
+										},
+										{
+											"source": {
+												"name": "source",
+												"type": "String"
+											},
+											"sink": {
+												"name": "source_data",
+												"type": "String",
+												"physicalType": "character"
+											}
+										},
+										{
+											"source": {
+												"name": "timestamp",
+												"type": "String"
+											},
+											"sink": {
+												"name": "timestamp",
+												"type": "DateTime",
+												"physicalType": "timestamp without time zone"
+											}
+										}
+									],
 									"typeConversion": true,
 									"typeConversionSettings": {
 										"allowDataTruncation": true,
@@ -121,7 +169,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "AzurePostgreSqlTable1",
+									"referenceName": "AzurePostgreSqloutputIMF",
 									"type": "DatasetReference"
 								}
 							]
