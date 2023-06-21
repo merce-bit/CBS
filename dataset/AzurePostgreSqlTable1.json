@@ -10,7 +10,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "metdata",
-			"table": "IMF_endpoints"
+			"table": "personal_info"
 		}
 	}
 }
