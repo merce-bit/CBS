@@ -1,5 +1,5 @@
 {
-	"name": "docsforeachloop",
+	"name": "foreachloop csv to parquet in ADLSgen2",
 	"properties": {
 		"activities": [
 			{
