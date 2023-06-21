@@ -1,5 +1,5 @@
 {
-	"name": "PushIMFdatatoPostgreSQL",
+	"name": "PushIMFendpointstoPostgreSQL",
 	"properties": {
 		"activities": [
 			{
