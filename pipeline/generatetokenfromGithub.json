@@ -30,31 +30,6 @@
 						}
 					}
 				}
-			},
-			{
-				"name": "Set variable1",
-				"type": "SetVariable",
-				"dependsOn": [
-					{
-						"activity": "Web generate token from Github",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "pipelineReturnValue",
-					"value": [
-						{
-							"key": "Var",
-							"value": {
-								"type": "String"
-							}
-						}
-					],
-					"setSystemVariable": true
-				}
 			}
 		],
 		"variables": {
