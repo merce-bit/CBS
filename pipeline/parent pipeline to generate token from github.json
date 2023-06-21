@@ -1,5 +1,5 @@
 {
-	"name": "parent pipeline",
+	"name": "parent pipeline to generate token from github",
 	"properties": {
 		"activities": [
 			{
@@ -9,7 +9,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "generatetokenfromGithub",
+						"referenceName": "generate token from Github",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true

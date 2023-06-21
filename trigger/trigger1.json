@@ -6,7 +6,7 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "docsforeachloop",
+					"referenceName": "foreachloop csv to parquet in ADLSgen2",
 					"type": "PipelineReference"
 				}
 			}
