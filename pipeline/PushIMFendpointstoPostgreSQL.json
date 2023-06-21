@@ -45,7 +45,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@equals(activity('Get csv file from blob storage').output.exist,true)",
+						"value": "@equals(activity('Get csv file from blob storage').output.exists,true)",
 						"type": "Expression"
 					},
 					"ifFalseActivities": [
