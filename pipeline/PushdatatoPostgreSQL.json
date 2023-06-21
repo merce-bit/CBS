@@ -110,8 +110,9 @@
 									"mappings": [
 										{
 											"source": {
+												"name": "id",
 												"type": "String",
-												"ordinal": 1
+												"physicalType": "String"
 											},
 											"sink": {
 												"name": "id",
@@ -121,8 +122,9 @@
 										},
 										{
 											"source": {
+												"name": "name",
 												"type": "String",
-												"ordinal": 2
+												"physicalType": "String"
 											},
 											"sink": {
 												"name": "name",
@@ -132,8 +134,9 @@
 										},
 										{
 											"source": {
+												"name": "department",
 												"type": "String",
-												"ordinal": 3
+												"physicalType": "String"
 											},
 											"sink": {
 												"name": "department",
@@ -143,8 +146,9 @@
 										},
 										{
 											"source": {
+												"name": "management",
 												"type": "String",
-												"ordinal": 4
+												"physicalType": "String"
 											},
 											"sink": {
 												"name": "management",
