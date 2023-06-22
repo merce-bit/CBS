@@ -1,17 +1,20 @@
 {
 	"name": "HttpServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"parameters": {
-			"BaseURL": {
-				"type": "string"
+			"WeBJson": {
+				"type": "String"
 			}
 		},
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "@{linkedService().BaseURL}",
+			"url": "https://jsonplaceholder.typicode.com/todos/1",
 			"enableServerCertificateValidation": true,
-			"authenticationType": "Anonymous"
+			"authenticationType": "Basic",
+			"userName": "@{linkedService().WeBJson}",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDg1MkMwRjQzLTZEQjItNDJDRi1BMThBLTY2NEQ5MDg1QjBBRV8yYjUwZGRmMC0zZWUxLTRjNzUtOTMyNi1hNTAxNTZlN2M1YzEiDQp9"
 		}
 	}
 }
