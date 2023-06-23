@@ -15,6 +15,12 @@
 					"referenceName": "apiIMFwithJSON",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "Apischeduletriggertest",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
