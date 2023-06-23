@@ -9,6 +9,12 @@
 					"referenceName": "foreachloop csv to parquet in ADLSgen2",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "apiIMFwithJSON",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
