@@ -48,6 +48,10 @@
 			"type": "string",
 			"defaultValue": "merce-bit"
 		},
+		"HttpServer1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "@{linkedService().BaseURL}"
+		},
 		"RestService_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://www.imf.org/external/datamapper/api/v1/"
@@ -113,6 +117,9 @@
 					},
 					"GitHubJSONfile_properties_typeProperties_username": {
 						"value": "[parameters('GitHubJSONfile_properties_typeProperties_username')]"
+					},
+					"HttpServer1_properties_typeProperties_url": {
+						"value": "[parameters('HttpServer1_properties_typeProperties_url')]"
 					},
 					"RestService_properties_typeProperties_url": {
 						"value": "[parameters('RestService_properties_typeProperties_url')]"
