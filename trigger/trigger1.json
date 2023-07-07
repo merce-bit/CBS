@@ -40,7 +40,7 @@
 			"recurrence": {
 				"frequency": "Week",
 				"interval": 1,
-				"startTime": "2023-07-07T11:49:00",
+				"startTime": "2023-07-07T11:51:00",
 				"timeZone": "SA Eastern Standard Time",
 				"schedule": {
 					"minutes": [
@@ -50,7 +50,7 @@
 						12
 					],
 					"weekDays": [
-						"Thursday"
+						"Friday"
 					]
 				}
 			}
