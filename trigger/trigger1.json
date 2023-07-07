@@ -21,6 +21,12 @@
 					"referenceName": "foreachloop csv to parquet in ADLSgen2",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "Lookup and ForEach activity",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
