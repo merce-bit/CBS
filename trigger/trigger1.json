@@ -34,7 +34,7 @@
 			"recurrence": {
 				"frequency": "Week",
 				"interval": 1,
-				"startTime": "2023-07-07T12:00:00",
+				"startTime": "2023-07-07T11:41:00",
 				"timeZone": "SA Eastern Standard Time",
 				"schedule": {
 					"minutes": [
