@@ -40,7 +40,7 @@
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 10,
-				"startTime": "2023-07-07T00:04:00",
+				"startTime": "2023-07-07T12:07:00",
 				"timeZone": "SA Eastern Standard Time"
 			}
 		}
