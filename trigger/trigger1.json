@@ -9,6 +9,12 @@
 					"referenceName": "apiIMFwithJSON",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "copy csv to parquet in ADLSgen2",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
