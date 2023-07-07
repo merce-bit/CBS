@@ -7,6 +7,10 @@
 		},
 		"annotations": [],
 		"type": "AzurePostgreSqlTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"schema": "metdata",
+			"table": "IMF_endpoints"
+		}
 	}
 }
