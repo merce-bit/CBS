@@ -27,6 +27,12 @@
 					"referenceName": "Lookup and ForEach activity",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "loop through table IMFendpoints",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
