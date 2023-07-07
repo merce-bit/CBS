@@ -38,21 +38,10 @@
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Week",
-				"interval": 1,
+				"frequency": "Minute",
+				"interval": 10,
 				"startTime": "2023-07-07T00:04:00",
-				"timeZone": "SA Eastern Standard Time",
-				"schedule": {
-					"minutes": [
-						0
-					],
-					"hours": [
-						12
-					],
-					"weekDays": [
-						"Friday"
-					]
-				}
+				"timeZone": "SA Eastern Standard Time"
 			}
 		}
 	}
