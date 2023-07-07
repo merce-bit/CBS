@@ -15,6 +15,12 @@
 					"referenceName": "copy csv to parquet in ADLSgen2",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "foreachloop csv to parquet in ADLSgen2",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
