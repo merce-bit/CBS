@@ -1,5 +1,5 @@
 {
-	"name": "LoopthroughpodtgreSQL",
+	"name": "LoopthroughpostgreSQL",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzurePostgreSql",
