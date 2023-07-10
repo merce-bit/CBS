@@ -69,10 +69,13 @@
 									}
 								},
 								"sink": {
-									"type": "AzurePostgreSQLSink",
-									"writeBatchSize": 1000000,
-									"writeBatchTimeout": "00:30:00",
-									"writeMethod": "CopyCommand"
+									"type": "JsonSink",
+									"storeSettings": {
+										"type": "AzureBlobStorageWriteSettings"
+									},
+									"formatSettings": {
+										"type": "JsonWriteSettings"
+									}
 								},
 								"enableStaging": false
 							},
@@ -94,10 +97,10 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "OutputAzurePostgreSqlTable",
+									"referenceName": "Blob_API_Json",
 									"type": "DatasetReference",
 									"parameters": {
-										"tableName": {
+										"fileName": {
 											"value": "@item().sinkTableName",
 											"type": "Expression"
 										}
@@ -107,6 +110,64 @@
 						}
 					]
 				}
+			},
+			{
+				"name": "Copy data2",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "ForEach1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"fileListPath": "outputcbscontainer/source",
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
+					"sink": {
+						"type": "AzurePostgreSQLSink",
+						"writeBatchSize": 1000000,
+						"writeBatchTimeout": "00:30:00",
+						"writeMethod": "CopyCommand"
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "Jsonfiles_in_blob",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "OutputAzurePostgreSqlTable",
+						"type": "DatasetReference",
+						"parameters": {
+							"tableName": {
+								"value": "@activity('Lookup1').output.value",
+								"type": "Expression"
+							}
+						}
+					}
+				]
 			}
 		],
 		"annotations": []

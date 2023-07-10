@@ -1,0 +1,12 @@
+{
+	"name": "AzurePostgreSqlTable3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzurePostgreSql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzurePostgreSqlTable",
+		"schema": []
+	}
+}

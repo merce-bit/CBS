@@ -1,0 +1,28 @@
+{
+	"name": "Blob_API_Json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureOutputStorage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().fileName",
+					"type": "Expression"
+				},
+				"folderPath": "source",
+				"container": "outputcbscontainer"
+			}
+		},
+		"schema": {}
+	}
+}
