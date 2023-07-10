@@ -2,14 +2,14 @@
 	"name": "HttpServer1",
 	"properties": {
 		"parameters": {
-			"BaseURL": {
+			"sourceBaseURL": {
 				"type": "string"
 			}
 		},
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "@{linkedService().BaseURL}",
+			"url": "@{linkedService().sourceBaseURL}",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
