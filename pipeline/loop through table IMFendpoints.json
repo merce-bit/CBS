@@ -38,7 +38,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "LoopthroughpodtgreSQL",
+						"referenceName": "LoopthroughpostgreSQL",
 						"type": "DatasetReference"
 					}
 				],

@@ -5,13 +5,18 @@
 			"referenceName": "AzurePostgreSql",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"tableName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "AzurePostgreSqlTable",
 		"schema": [],
 		"typeProperties": {
 			"schema": "metdata",
 			"table": {
-				"value": "take().name",
+				"value": "@dataset().tableName",
 				"type": "Expression"
 			}
 		}
