@@ -5,6 +5,11 @@
 			"referenceName": "AzurePostgreSql",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "AzurePostgreSqlTable",
 		"schema": [
@@ -35,7 +40,10 @@
 		],
 		"typeProperties": {
 			"schema": "metdata",
-			"table": "IMF_endpoints"
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
 		}
 	}
 }
