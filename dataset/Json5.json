@@ -1,0 +1,2600 @@
+{
+	"name": "Json5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureOutputStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "indicators.Json",
+				"folderPath": "source",
+				"container": "outputcbscontainer"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"indicators": {
+					"type": "object",
+					"properties": {
+						"NGDP_RPCH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"NGDPD": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"NGDPDPC": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PPPGDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PPPPC": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PPPSH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PPPEX": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PCPIPCH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PCPIEPCH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"LP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"BCA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"BCA_NGDPD": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "null"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "null"
+								},
+								"unit": {
+									"type": "null"
+								},
+								"dataset": {
+									"type": "null"
+								}
+							}
+						},
+						"LUR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGXCNL_NGDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGXWDG_NGDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"rev": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"exp": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"prim_exp": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"ie": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"pb": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"d": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"rgc": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "null"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"rltir": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "null"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"extensive": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"intensive": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"total_theil": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"SITC1_0": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"SITC1_1": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"SITC1_2": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"SITC1_3": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"SITC1_4": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"SITC1_5": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"SITC1_6": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"SITC1_7": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"SITC1_8": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"SITC1_9": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"SITC1_total": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"DirectAbroad": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"DirectIn": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PrivInexDI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PrivInexDIGDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PrivOutexDI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PrivOutexDIGDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Portfa": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Portfl": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"EquityA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"EquityL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"DebtA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"DebtL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"OtherGov": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"OtherA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"OtherL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Deriv": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"DebtForg": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "null"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"ka_new": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"ka_in": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"ka_out": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"FM_ka": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Nonres_ka": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Res_ka": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Ka_eq": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Ka_bo": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Ka_mm": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Ka_ci": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Ka_dr": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Ka_cc": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Ka_fc": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Ka_gu": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Ka_di": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"ka_ldi": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"ka_ret": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"ka_pct": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Reserves_ARA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Reserves_M2": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Reserves_STD": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Reserves_M": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GRB_dummy": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GDI_TC": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GII_TC": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"DEBT1": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"Privatedebt_all": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"HH_ALL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"NFC_ALL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PVD_LS": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"HH_LS": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"NFC_LS": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PS_DEBT_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"NFPS_DEBT_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GG_DEBT_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"CG_DEBT_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGXCNL_G01_GDP_PT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGXONLB_G01_GDP_PT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGCB_G01_PGDP_PT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGCBP_G01_PGDP_PT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGR_G01_GDP_PT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"G_X_G01_GDP_PT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"G_XWDG_G01_GDP_PT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGXWDN_G01_GDP_PT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"NGDP_R_PCH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"NGDPXO_RPCH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"NGDPRPC_PCH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"NI_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"NGS_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGXCNL_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGXCNLXG_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGRXG_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGX_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"GGXWDG_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"FMB_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"FDSAOP_PCH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"FDSAOP_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"FMB_PCH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"BX_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"BCA_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"BM_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"BT_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"BFD_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"BRASS_MI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"EREER": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"ENEER": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"DG_GDP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PCPI_PCH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"PCPIE_PCH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"TTT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"FR_ind": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						},
+						"FC_dummy": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								},
+								"description": {
+									"type": "string"
+								},
+								"source": {
+									"type": "string"
+								},
+								"unit": {
+									"type": "string"
+								},
+								"dataset": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"api": {
+					"type": "object",
+					"properties": {
+						"version": {
+							"type": "string"
+						},
+						"output-method": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	}
+}
