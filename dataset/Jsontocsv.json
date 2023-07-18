@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "countries.Json",
+				"fileName": "indicators.Json",
 				"folderPath": "source",
 				"container": "outputcbscontainer"
 			}
