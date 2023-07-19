@@ -21,7 +21,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "LoopthroughpostgreSQL",
+						"referenceName": "AzurePostgreSqlTableoutputimf",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
@@ -112,13 +112,97 @@
 				}
 			},
 			{
+				"name": "ForEach2",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "ForEach1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Copy data1').output",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Copy json to csv",
+							"type": "Copy",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"source": {
+									"type": "JsonSource",
+									"storeSettings": {
+										"type": "AzureBlobStorageReadSettings",
+										"fileListPath": "outputcbscontainer/source",
+										"enablePartitionDiscovery": false
+									},
+									"formatSettings": {
+										"type": "JsonReadSettings"
+									}
+								},
+								"sink": {
+									"type": "DelimitedTextSink",
+									"storeSettings": {
+										"type": "AzureBlobFSWriteSettings"
+									},
+									"formatSettings": {
+										"type": "DelimitedTextWriteSettings",
+										"quoteAllText": true,
+										"fileExtension": ".txt"
+									}
+								},
+								"enableStaging": false,
+								"translator": {
+									"type": "TabularTranslator",
+									"mappings": [
+										{
+											"source": {
+												"path": "$"
+											},
+											"sink": {
+												"name": "schema"
+											}
+										}
+									]
+								}
+							},
+							"inputs": [
+								{
+									"referenceName": "Jsonfiles_in_blob",
+									"type": "DatasetReference"
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "json_to_csv",
+									"type": "DatasetReference"
+								}
+							]
+						}
+					]
+				}
+			},
+			{
 				"name": "Copy data2",
 				"type": "Copy",
 				"dependsOn": [
 					{
 						"activity": "ForEach1",
 						"dependencyConditions": [
-							"Succeeded"
+							"Completed"
 						]
 					}
 				],
@@ -135,7 +219,7 @@
 						"type": "JsonSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"fileListPath": "outputcbscontainer/source",
+							"recursive": true,
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -148,7 +232,17 @@
 						"writeBatchTimeout": "00:30:00",
 						"writeMethod": "CopyCommand"
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
@@ -158,14 +252,8 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "OutputAzurePostgreSqlTable",
-						"type": "DatasetReference",
-						"parameters": {
-							"tableName": {
-								"value": "@activity('Lookup1').output.value",
-								"type": "Expression"
-							}
-						}
+						"referenceName": "AzurePostgreSqlTable4",
+						"type": "DatasetReference"
 					}
 				]
 			}
