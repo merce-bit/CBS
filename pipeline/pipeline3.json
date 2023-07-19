@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "dataflow1",
+						"referenceName": "api_imf",
 						"type": "DataFlowReference",
 						"parameters": {
 							"parameter1": "countries"
