@@ -1,0 +1,43 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- development
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Azure Consulytic (45bb9aea-e6dd-4cd0-a49f-ab64e404f67a)'
+    scriptType: 'batch'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az login --allow-no-subscription
+            az postgres flexible-server execute --name $(postgrescbs.postgres.database.azure.com) \
+            --admin-user $(admincbsconsulytic) --admin-password '$(Con1Su2Ly3Tic4)' \
+            --database-name $(resourcescbs) --file-path /ELT/Metadata/Sources/Source_IMF.sql
+    arguments:  -SERVERNAME postgrescbs `       
+                -DBNAME resourcescbs `       
+                -DBUSER admincbsconsulytic`       
+                -DBPASSWORD Con1Su2Ly3Tic4'
