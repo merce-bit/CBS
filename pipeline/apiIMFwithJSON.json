@@ -1,0 +1,148 @@
+{
+	"name": "apiIMFwithJSON",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach through the APIEndpoints",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Copy data from json file",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [
+					{
+						"name": "CurrentEndpoint",
+						"value": "@item()"
+					}
+				],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.APIEndpoints\n",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Retrieve API from JSON file in Github",
+							"type": "WebActivity",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [
+								{
+									"name": "Endpoint",
+									"value": "@item().Endpoint"
+								}
+							],
+							"typeProperties": {
+								"url": {
+									"value": "@concat(pipeline().parameters.BaseURL, item().Endpoint)",
+									"type": "Expression"
+								},
+								"method": "GET"
+							}
+						}
+					]
+				}
+			},
+			{
+				"name": "Copy data from json file",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "JsonReadSettings"
+						}
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "JsonfromGithub",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Jsonfile",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"parameters": {
+			"BaseURL": {
+				"type": "string",
+				"defaultValue": "'https://www.imf.org/external/datamapper/api/v1/'"
+			},
+			"APIEndpoints": {
+				"type": "array",
+				"defaultValue": [
+					"groups",
+					"regions",
+					"countries",
+					"indicators"
+				]
+			},
+			"OutputFolderPath": {
+				"type": "string",
+				"defaultValue": "'https://github.com/merce-bit/CBS/blob/main/ELT/endpoints.json'"
+			}
+		},
+		"variables": {
+			"baseUrl": {
+				"type": "String"
+			},
+			"groups": {
+				"type": "String"
+			},
+			"regions": {
+				"type": "String"
+			},
+			"countries": {
+				"type": "String"
+			},
+			"indicators": {
+				"type": "String"
+			},
+			"Var01": {
+				"type": "Array"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-06-07T17:04:25Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

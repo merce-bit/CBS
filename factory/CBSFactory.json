@@ -1,0 +1,9 @@
+{
+	"name": "CBSFactory",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e224b982-a3fd-48c1-966f-cd1113a6e6a5",
+		"tenantId": "b145dfaf-a3fa-45e3-9de9-dbb1465d52fe"
+	}
+}

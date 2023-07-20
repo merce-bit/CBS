@@ -1,0 +1,26 @@
+{
+	"name": "parent pipeline to generate token from github",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute ParentPipeline",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "generate token from Github",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"variables": {
+			"Var01": {
+				"type": "Array"
+			}
+		},
+		"annotations": []
+	}
+}

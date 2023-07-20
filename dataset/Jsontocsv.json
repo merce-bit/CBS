@@ -1,0 +1,20 @@
+{
+	"name": "Jsontocsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureOutputStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "indicators.Json",
+				"folderPath": "source",
+				"container": "outputcbscontainer"
+			}
+		},
+		"schema": {}
+	}
+}

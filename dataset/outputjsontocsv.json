@@ -1,0 +1,24 @@
+{
+	"name": "outputjsontocsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureOutputStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "countries.csv",
+				"folderPath": "source",
+				"container": "outputcbscontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
