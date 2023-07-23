@@ -42,7 +42,7 @@
 				"     ),",
 				"     skipDuplicateMapInputs: false,",
 				"     skipDuplicateMapOutputs: false) ~> flatten1",
-				"flatten1 sink(allowSchemaDrift: false,",
+				"flatten1 sink(allowSchemaDrift: true,",
 				"     validateSchema: true,",
 				"     deletable:false,",
 				"     insertable:true,",
@@ -50,11 +50,7 @@
 				"     upsertable:false,",
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true,",
-				"     mapColumn(",
-				"          countries = countries,",
-				"          api",
-				"     )) ~> sink1"
+				"     skipDuplicateMapOutputs: true) ~> sink1"
 			]
 		}
 	}
