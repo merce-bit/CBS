@@ -1,0 +1,1951 @@
+{
+	"name": "CountriesForTesting",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "countries.Json",
+				"folderPath": "outputcbscontainer/source"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"countries": {
+					"type": "object",
+					"properties": {
+						"ABW": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"AFG": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"AGO": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"AIA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ALB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ARE": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ARG": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ARM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ASM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ATG": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"AUS": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"AUT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"AZE": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BDI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BEL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BEN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BFA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BGD": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BGR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BHR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BHS": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BIH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BLR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BLZ": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BMU": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BOL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BRA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BRB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BRN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BTN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BWA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CAF": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CAN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CHE": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CHI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CHL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CHN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CIV": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CMR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"COD": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"COG": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"COK": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"COL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"COM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CPV": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CRI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CUB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CYM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CYP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CZE": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"DEU": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"DJI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"DMA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"DNK": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"DOM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"DZA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ECU": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"EGY": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ERI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ESH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ESP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"EST": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ETH": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"FIN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"FJI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"FLK": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"FRA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"FRO": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"FSM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GAB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GBR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GEO": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GHA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GIB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GIN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GLP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GMB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GNB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GNQ": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GRC": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GRD": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GRL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GTM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GUF": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GUM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"GUY": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"HKG": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"HND": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"HRV": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"HTI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"HUN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"IDN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"IMY": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"IND": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"IRL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"IRN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"IRQ": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ISL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ISR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ITA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"JAM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"JOR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"JPN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"KAZ": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"KEN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"KGZ": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"KHM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"KIR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"KNA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"KOR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"KWT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"LAO": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"LBN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"LBR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"LBY": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"LCA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"LIE": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"LKA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"LSO": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"LTU": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"LUX": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"LVA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MAC": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MAR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MCO": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MDA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MDG": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MDV": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MEX": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MHL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MKD": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MLI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MLT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MMR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MNE": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MNG": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MNP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MOZ": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MRT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MSR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MTQ": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MUS": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MWI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MYS": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MYT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"NAM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"NCL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"NER": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"NGA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"NIC": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"NIU": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"NLD": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"NOR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"NPL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"NRU": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"NZL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"OMN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PAK": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PAN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PCN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PER": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PHL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PLW": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PNG": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"POL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PRI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PRK": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PRT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PRY": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"PYF": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"QAT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"REU": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ROU": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"RUS": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"RWA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SAU": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SDN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SEN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SGP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SHN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SJM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SLB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SLE": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SLV": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SMR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SOM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SPM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SRB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"STP": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SUR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SVK": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SVN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SWE": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SWZ": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SYC": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SYR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TCA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TCD": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TGO": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"THA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TJK": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TKL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TKM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TLS": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TON": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TTO": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TUN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TUR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TUV": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TWN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"TZA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"UGA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"UKR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"URY": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"USA": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"UZB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"UVK": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"VAT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"VCT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"VEN": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"VGB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"VIR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"VNM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"VUT": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"WBG": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"WLF": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"WSM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"YEM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ZAF": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ZMB": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ZWE": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SSD": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"BNR": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"CUW": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"MFX": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"SXM": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						},
+						"ATI": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "null"
+								}
+							}
+						},
+						"ATL": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "null"
+								}
+							}
+						},
+						"AND": {
+							"type": "object",
+							"properties": {
+								"label": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"api": {
+					"type": "object",
+					"properties": {
+						"version": {
+							"type": "string"
+						},
+						"output-method": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	}
+}
