@@ -11,7 +11,8 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "countries.Json",
-				"folderPath": "outputcbscontainer/source"
+				"folderPath": "source",
+				"fileSystem": "outputcbscontainer"
 			}
 		},
 		"schema": {
