@@ -1,0 +1,16 @@
+{
+	"name": "PostgreSQL_Countries",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzurePostgreSql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzurePostgreSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "metdata",
+			"table": "countries"
+		}
+	}
+}
