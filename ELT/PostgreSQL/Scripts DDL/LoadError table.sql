@@ -14,7 +14,7 @@ DECLARE
 
  
 
-    Version INT := 20230622-02;
+    Version INT := 20230622-01;
 
  
 
@@ -50,7 +50,7 @@ BEGIN
 
  
 
-        IF NOT EXISTS (SELECT 1 FROM "ControlTable" WHERE "ScriptName" = ScriptName AND "Version"= Version ) THEN
+        IF NOT EXISTS (SELECT 1 FROM metdata."ControlTable" WHERE "ScriptName" = ScriptName AND "Version"= Version ) THEN
 
  
 
@@ -60,7 +60,7 @@ BEGIN
 
             -- Example: Creating a table
 
-                CREATE TABLE "LoadError"
+                CREATE TABLE metdata."LoadError"
                 (
                     "ScriptName" character(500),
                     "Version" integer,
@@ -68,10 +68,7 @@ BEGIN
                     "Developer" character(500),
                     "ErrorMessage" character(500),
                     "ErrorTimestamp" timestamp(6) with time zone
-                )
- 
-
-            );
+                );
 
 
 

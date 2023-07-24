@@ -15,7 +15,7 @@ DECLARE
 
  
 
-    Version INT := 20230622-02;
+    Version INT := 20230622-01;
 
  
 
@@ -51,7 +51,7 @@ BEGIN
 
  
 
-        IF NOT EXISTS (SELECT 1 FROM "ControlTable" WHERE "ScriptName" = ScriptName AND "Version"= Version ) THEN
+--        IF NOT EXISTS (SELECT 1 FROM "ControlTable" WHERE "ScriptName" = ScriptName AND "Version"= Version ) THEN
 
  
 
@@ -63,7 +63,7 @@ BEGIN
 
  
 
-            CREATE TABLE "ControlTable" (
+            CREATE TABLE metdata."ControlTable" (
 
                 "ScriptName" character(500),
                 "Version" integer,
@@ -71,20 +71,10 @@ BEGIN
                 "Developer" character(500),
                 "Timestamp" timestamp(6) with time zone,
                 "Executed" boolean
-            )
-
             );
 
-        END IF;
+--        END IF;
 
- 
-
-
-        -- Commit the transaction
-
- 
-
---        COMMIT;
 
  
 
