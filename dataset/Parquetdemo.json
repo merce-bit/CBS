@@ -1,0 +1,21 @@
+{
+	"name": "Parquetdemo",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureOutputStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "output",
+				"container": "outputcbscontainer"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,42 @@
+{
+	"name": "AzurePostgreSqlTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzurePostgreSql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzurePostgreSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "numeric",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "name",
+				"type": "character",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "department",
+				"type": "character",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "allarounderornot",
+				"type": "character",
+				"precision": 0,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "metdata",
+			"table": "personal_info"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

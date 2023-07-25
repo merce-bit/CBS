@@ -1,0 +1,17 @@
+{
+	"name": "AzurePostgreSqlTableoutputimf",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzurePostgreSql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzurePostgreSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "metdata",
+			"table": "IMF_endpoints"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,20 @@
+{
+	"name": "AzurePostgreSql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "connect to postgresql",
+		"annotations": [],
+		"type": "AzurePostgreSql",
+		"typeProperties": {
+			"connectionString": "Host=postgresqlcbs.postgres.database.azure.com;Port=5432;Database=cbs;UID=admincbsconsulytic;EncryptionMethod=1;ValidateServerCertificate=0",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "admincbsconsulytic"
+			}
+		}
+	}
+}

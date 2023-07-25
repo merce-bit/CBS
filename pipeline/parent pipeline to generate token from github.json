@@ -1,0 +1,28 @@
+{
+	"name": "parent pipeline to generate token from github",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute ParentPipeline",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "generate token from Github",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"variables": {
+			"Var01": {
+				"type": "Array"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-07-07T15:07:14Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
