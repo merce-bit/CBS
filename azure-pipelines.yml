@@ -1,0 +1,37 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- Development
+
+pool:
+  vmImage: windows-latest
+
+steps:
+
+# copy scripts from github
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/ELT/PostgreSQL/Scripts DDL'
+    Contents: 'Control table.sql'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+# connect to postgresql using azurecli  
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Azure Consulytic (45bb9aea-e6dd-4cd0-a49f-ab64e404f67a)'
+    scriptType: 'ps'
+    scriptLocation: inlineScript
+    inlineScript: |
+      az login --allow-no-subscription
+      az postgres flexible-server execute --name $(SERVERNAME) \
+      --admin-user $(DBUSER) --admin-password $(DBPASSWORD) \
+      --database-name $(DBNAME) --file-path $(Build.ArtifactStagingDirectory)\Controltable.sql
+    arguments: |
+      -SERVERNAME postgresqlcbs.postgres.database.azure.com `
+      -DBNAME cbs `
+      -DBUSER admincbsconsulytic `
+      -DBPASSWORD Con1Su2Ly3Tic4
+      
