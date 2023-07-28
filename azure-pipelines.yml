@@ -1,0 +1,27 @@
+# YAML for DevOps
+
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- Development
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/ELT/PostgreSQL/Scripts DDL'
+    Contents: 'Control table.sql'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Azure Consulytic (45bb9aea-e6dd-4cd0-a49f-ab64e404f67a)'
+    scriptType: 'pscore'
+    scriptLocation: inlineScript
+    inlineScript: |
+      az postgres flexible-server execute --name postgresqlcbs --admin-user admincbsconsulytic --admin-password 'Con1Su2Ly3Tic4' --database-name cbs --file-path "$(Build.ArtifactStagingDirectory)/Control table.sql"
