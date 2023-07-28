@@ -50,7 +50,7 @@ BEGIN
 
  
 
-        IF NOT EXISTS (SELECT 1 FROM metdata."ControlTable" WHERE "ScriptName" = ScriptName AND "Version"= Version ) THEN
+        IF NOT EXISTS (SELECT 1 FROM metadata."ControlTable" WHERE "ScriptName" = ScriptName AND "Version"= Version ) THEN
 
  
 
@@ -62,7 +62,7 @@ BEGIN
 
  
 
-            CREATE TABLE IF NOT EXISTS metdata."IMF_endpoints"
+            CREATE TABLE IF NOT EXISTS metadata."IMF_endpoints"
             (
                 id numeric NOT NULL,
                 sourceRelativeURL character(200),
@@ -80,7 +80,7 @@ BEGIN
 
  
 
-            INSERT INTO metdata."ControlTable" ("ScriptName", "Version", "Description", "Developer", "Timestamp", "Executed")
+            INSERT INTO metadata."ControlTable" ("ScriptName", "Version", "Description", "Developer", "Timestamp", "Executed")
 
  
 

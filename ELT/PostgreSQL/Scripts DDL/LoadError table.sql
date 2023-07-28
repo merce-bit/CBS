@@ -50,7 +50,7 @@ BEGIN
 
  
 
-        IF NOT EXISTS (SELECT 1 FROM metdata."ControlTable" WHERE "ScriptName" = ScriptName AND "Version"= Version ) THEN
+        IF NOT EXISTS (SELECT 1 FROM metadata."ControlTable" WHERE "ScriptName" = ScriptName AND "Version"= Version ) THEN
 
  
 
@@ -60,7 +60,7 @@ BEGIN
 
             -- Example: Creating a table
 
-                CREATE TABLE metdata."LoadError"
+                CREATE TABLE IF NOT EXISTS metadata."LoadError"
                 (
                     "ScriptName" character(500),
                     "Version" integer,

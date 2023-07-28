@@ -63,7 +63,7 @@ BEGIN
 
  
 
-            CREATE TABLE metdata."ControlTable" (
+            CREATE TABLE IF NOT EXISTS metadata."ControlTable" (
 
                 "ScriptName" character(500),
                 "Version" integer,
