@@ -12,7 +12,7 @@ pool:
 steps:
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)/ELT/PostgreSQL/Scripts DDL'
+    SourceFolder: '$(Build.SourcesDirectory)CBS/ELT/PostgreSQL/Scripts DDL'
     Contents: 'Controltable.sql'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
