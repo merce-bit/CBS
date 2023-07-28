@@ -15,7 +15,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)/ELT/PostgreSQL/Scripts DDL'
-    Contents: 'Control table.sql'
+    Contents: 'Controltable.sql'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 # connect to postgresql using azurecli  
