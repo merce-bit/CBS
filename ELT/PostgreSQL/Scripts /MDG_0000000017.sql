@@ -122,7 +122,7 @@ BEGIN
  
 
    -- Insert error details into the LoadError table
-            INSERT INTO metdata."LoadError" ("ScriptName", "Version", "Description", "Developer", "ErrorMessage", "ErrorTimestamp")
+            INSERT INTO metadata."LoadError" ("ScriptName", "Version", "Description", "Developer", "ErrorMessage", "ErrorTimestamp")
             VALUES (ScriptName, Version, Description, Developer, SQLERRM, current_timestamp);
 
  
