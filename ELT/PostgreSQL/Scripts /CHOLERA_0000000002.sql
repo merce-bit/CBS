@@ -62,7 +62,7 @@ BEGIN
 
  
 
-            CREATE TABLE IF NOT EXISTS raw."CHOLERA_0000000002"
+            CREATE TABLE IF NOT EXISTS raw."WHO_CHOLERA_0000000002"
             (
                 id numeric NOT NULL,
 				IndicatorCode character(500),
