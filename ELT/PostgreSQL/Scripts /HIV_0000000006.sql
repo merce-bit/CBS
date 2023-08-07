@@ -62,7 +62,7 @@ BEGIN
 
  
 
-            CREATE TABLE IF NOT EXISTS raw."HIV_0000000006"
+            CREATE TABLE IF NOT EXISTS raw."WHO_HIV_0000000006"
             (
                 id numeric NOT NULL,
 				IndicatorCode character(500),
