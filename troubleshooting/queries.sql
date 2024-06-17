@@ -46,3 +46,19 @@ ORDER BY date ASC;
 -- count total rows
 SELECT COUNT(*) AS total_rows
 FROM "raw".injixo_testplan;
+-------------------------------------
+-- check for duplicate rows
+select	start_date,	end_date, planning_unit_id,	selection_id, employee_id, employee_name, total_scheduled_time,	total_actual_time, total_in_adherence_time, 
+		total_out_of_adherence_time, total_in_adherence_percentage, total_out_of_conformance_time, total_conformance_percentage, total_scheduled_percentage,
+		total_actual_percentage, work_scheduled_time, work_actual_time, work_in_adherence_time, work_out_of_adherence_time, work_in_adherence_percentage,
+		work_out_of_conformance_time, work_conformance_percentage, work_scheduled_percentage, work_actual_percentage, break_scheduled_time, break_actual_time,
+		break_in_adherence_time, break_out_of_adherence_time, break_in_adherence_percentage, break_out_of_conformance_time, break_conformance_percentage, 
+		break_scheduled_percentage, break_actual_percentage, count(*) as count
+from "raw".injixo_adherence
+group by start_date, end_date, planning_unit_id, selection_id, employee_id, employee_name, total_scheduled_time, total_actual_time, total_in_adherence_time, 
+		total_out_of_adherence_time, total_in_adherence_percentage, total_out_of_conformance_time, total_conformance_percentage, total_scheduled_percentage,
+		total_actual_percentage, work_scheduled_time, work_actual_time, work_in_adherence_time, work_out_of_adherence_time, work_in_adherence_percentage,
+		work_out_of_conformance_time, work_conformance_percentage, work_scheduled_percentage, work_actual_percentage, break_scheduled_time, break_actual_time,
+		break_in_adherence_time, break_out_of_adherence_time, break_in_adherence_percentage, break_out_of_conformance_time, break_conformance_percentage, 
+		break_scheduled_percentage, break_actual_percentage
+having count(*) > 1;
